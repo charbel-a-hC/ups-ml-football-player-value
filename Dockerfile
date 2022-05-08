@@ -22,25 +22,25 @@ RUN apt-key del 7fa2af80 &&\
 RUN apt update && apt install -y software-properties-common
 
 # Install System Dependencies
-RUN add-apt-repository ppa:deadsnakes/ppa && \
-    apt update && \
-    apt install -y \
-    python3.8 \
+RUN add-apt-repository ppa:deadsnakes/ppa
+RUN apt update
+
+RUN apt-get install -y python3.8 \
     python3-pip \
     python3.8-venv \
     python3.8-dev \
     python3.8-distutils \
-    git \
+    curl \
     vim \
-    curl
+    git
 
+
+RUN update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.8 1
 RUN python3 -m pip install --upgrade pip
-ENV PATH=/venv/bin:$PATH
 
-RUN curl -sSL https://install.python-poetry.org | python3.8 -
+RUN curl -sSL https://install.python-poetry.org | python3 -
 ENV PATH=/root/.local/bin:$PATH
 RUN poetry config virtualenvs.create false
-
 
 
 WORKDIR /ups-ml-football-player-value
