@@ -60,3 +60,5 @@ You can then open a jupyter notebook similarly:
 ```bash
 jupyter notebook
 ```
+### Google Colaboratory
+You can run the notebook in a Google Colaboratory instance. Just head over to [google colab](https://colab.research.google.com/?utm_source=scs-index) and upload the notebook to your drive.
