@@ -22,8 +22,13 @@ More information on the dataset maintenance can be found on the official website
 - `envrionment.yml`: YAML file containing conda exported environment for development (you can use either poetry or conda)
 
 ## Running the Notebook
+Clone and `cd` in the repository before running any of the commands:
+```bash
+git clone https://github.com/charbel-a-hC/ups-ml-football-player-value.git
+cd ups-ml-football-player-value
+```
 ### Docker
-If you have docker installed, clone and `cd` in the repository and run the following:
+If you have docker installed:
 ```bash
 docker build . -t ups-football-value
 docker run -it --rm -v --runtime=nvidia ${PWD}:/ups-ml-football-player-value ups-football-value bash
@@ -49,7 +54,7 @@ jupyter notebook --ip 0.0.0.0 --port 8888 --allow-root
 You can download Anaconda [here](https://docs.anaconda.com/anaconda/install/index.html).
 After the download, open an anaconda navigator prompt if you're on windows and run the following commands:
 ```bash
-conda env create -f environment. yml
+conda env create -f environment.yml
 conda activate ml
 ```
 **Note**: If you're on Linux, you can open a normal terminal and run the following command before creating the environment:
