@@ -27,6 +27,18 @@ Clone and `cd` in the repository before running any of the commands:
 git clone https://github.com/charbel-a-hC/ups-ml-football-player-value.git
 cd ups-ml-football-player-value
 ```
+You also need to install `python3.8` locally if you wish to run the notebook on a **local** environment. For Ubuntu:
+```bash
+sudo apt-get install python3.8 \
+    python3-pip \
+    python3.8-venv \
+    python3.8-dev \
+    python3.8-distutils
+```
+And you need to update your `pip`:
+```bash
+/usr/bin/python3.8 -m pip install --upgrade pip
+```
 ### Docker
 If you have docker installed:
 ```bash
