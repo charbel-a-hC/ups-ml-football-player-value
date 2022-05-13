@@ -34,10 +34,12 @@ RUN apt-get install -y python3.8 \
     vim \
     git
 
-
+# Adjust default python3 version to required version
 RUN update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.8 1
+# Update pip3 version
 RUN python3 -m pip install --upgrade pip
 
+# Install poetry
 RUN curl -sSL https://install.python-poetry.org | python3 -
 ENV PATH=/root/.local/bin:$PATH
 RUN poetry config virtualenvs.create false
@@ -48,4 +50,4 @@ COPY pyproject.toml .
 COPY Makefile .
 RUN make env-docker
 
-ENTRYPOINT [ "jupyter", "notebook", "--ip", "0.0.0.0", "--port", "8888", "--allow-root"]
+ENTRYPOINT [ "jupyter", "notebook", "--ip", "0.0.0.0", "--port", "8000", "--allow-root"]
