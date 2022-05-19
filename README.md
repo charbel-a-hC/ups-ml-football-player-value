@@ -78,4 +78,4 @@ You can then open a jupyter notebook similarly:
 jupyter notebook
 ```
 ### Google Colaboratory
-You can run the notebook in a Google Colaboratory instance. Just head over to [google colab](https://colab.research.google.com/?utm_source=scs-index) and upload the notebook to your drive.
+You can open the notebook in Google Colab here: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/charbel-a-hC/ups-ml-football-player-value/blob/main/PlayerMarketValuePrediction.ipynb)
