@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "ups-ml-football-player-value"
 version = "0.1.0"
-description = ""
+description = "Football player transfer market value prediction using data.world transfermarkt dataset"
 authors = ["Charbel Abi Hana <charbel-a-h@outlook.com>"]
 
 [tool.poetry.dependencies]
