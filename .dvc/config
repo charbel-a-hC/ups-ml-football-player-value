@@ -1,0 +1,4 @@
+[core]
+    remote = dataset
+['remote "dataset"']
+    url = s3://ups-football-dataset-bucket/dcereijo-player-scores/
