@@ -3,4 +3,9 @@
 
 # vscode config
 .vscode/
+
+# venv
+.venv
+
+# dataset
 /dcereijo-player-scores
