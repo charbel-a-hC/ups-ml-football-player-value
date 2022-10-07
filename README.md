@@ -13,7 +13,7 @@ All this data is structured in multiple CSV files with information on competitio
 More information on the dataset maintenance can be found on the official website and [Github Repository](https://github.com/dcaribou/transfermarkt-datasets)
 
 ## Repo Structure
-- `dcerejio-players-scores`: full dataset downloaded from data.world
+- `dcerejio-players-scores`: full dataset downloaded from g-drive using `dvc pull -r dataset`
 - `scripts`: contains formating script for py-files
 - `Makefile`: Makefile where you can create a virtual env or create a docker container to run the notebook
 - `Dockerfile`: Dockerfile to build a docker image with GPU support (tested on NVIDIA TITAN RTX with Ubuntu 18.04). More information on how to download docker can be found [here](https://docs.docker.com/get-docker/). nvidia-docker installation can also be found [here](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html)
